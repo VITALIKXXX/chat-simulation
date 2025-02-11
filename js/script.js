@@ -19,13 +19,23 @@ const appendMessage = (sender, text) => {
 };
 
 const getBotResponse = (input) => {
-    const responses = {
-        'hello': 'Hello! How are you?',
-        'how are you?': 'I am good, thank you!',
-        'what are you doing?': 'I am talking with you :)',
-        'goodbye': 'See you!'
-    };
-    return responses[input.toLowerCase()] || 'I do not understand :(';
+    const responses = [
+        { pattern: /hello/i, response: 'Hello! How are you?' },
+        { pattern: /how are you\?/i, response: 'I am good, thank you!' },
+        { pattern: /what are you doing\?/i, response: 'I am talking with you :)' },
+        { pattern: /goodbye/i, response: 'See you!' },
+        { pattern: /your name/i, response: 'I am your friendly chatbot!' },
+        { pattern: /how old are you\?/i, response: 'I am timeless, I have no age :)' },
+        { pattern: /bye/i, response: 'Goodbye! Have a great day!' }
+    ];
+
+    for (let i = 0; i < responses.length; i++) {
+        if (responses[i].pattern.test(input)) {
+            return responses[i].response;
+        }
+    }
+
+    return 'I do not understand :(';
 };
 
 inputBox.addEventListener('keypress', (e) => {
