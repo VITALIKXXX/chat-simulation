@@ -14,6 +14,7 @@ const sendMessage = () => {
 const appendMessage = (sender, text) => {
     const msgDiv = document.createElement('div');
     msgDiv.textContent = text;
+    msgDiv.classList.add('chat__message', sender === 'user' ? 'chat__message--user' : 'chat__message--bot');
     chatBox.appendChild(msgDiv);
     chatBox.scrollTop = chatBox.scrollHeight;
 };
