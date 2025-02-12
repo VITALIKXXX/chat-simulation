@@ -30,6 +30,7 @@
     background: #efe7dd;
 }
 
+
 .chat__message {
     max-width: 75%;
     padding: 10px 15px;
@@ -61,8 +62,23 @@
     text-align: left;
 }
 
+
+.chat__container {
+    width: 360px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+}
+
 .chat__input {
-    width: calc(100% - 20px);
+    flex: 1;
     padding: 10px;
     border: none;
     outline: none;
@@ -70,24 +86,21 @@
     border-radius: 20px;
     border: 1px solid #ced4da;
     padding-left: 15px;
-    margin: 10px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-right: 10px;
 }
 
 .chat__button {
-    padding: 6px 8px;
+    padding: 8px 12px;
     border: none;
     background: #128c7e;
     color: white;
     cursor: pointer;
     border-radius: 50%;
-    position: absolute;
-    bottom: 10px;
-    right: 15px;
     transition: background 0.3s;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .chat__button:hover {
