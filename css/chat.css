@@ -61,7 +61,6 @@
     text-align: left;
 }
 
-/* Stałe umiejscowienie inputa i przycisku */
 .chat__container {
     width: 100%;
     display: flex;
