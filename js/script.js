@@ -21,13 +21,19 @@ const appendMessage = (sender, text) => {
 
 const getBotResponse = (input) => {
     const responses = [
-        { pattern: /hello/i, response: 'Hello! How are you?' },
-        { pattern: /how are you\?/i, response: 'I am good, thank you!' },
-        { pattern: /what are you doing\?/i, response: 'I am talking with you :)' },
-        { pattern: /goodbye/i, response: 'See you!' },
+        { pattern: /hello|hi|hey/i, response: 'Hello! How can I help you today?' },
+        { pattern: /how are you\?/i, response: 'I am great, thanks for asking! How about you?' },
+        { pattern: /what are you doing\?/i, response: 'Just chatting with you! What’s up?' },
+        { pattern: /goodbye|bye/i, response: 'See you soon! Have a great day!' },
         { pattern: /your name/i, response: 'I am your friendly chatbot!' },
-        { pattern: /how old are you\?/i, response: 'I am timeless, I have no age :)' },
-        { pattern: /bye/i, response: 'Goodbye! Have a great day!' }
+        { pattern: /how old are you\?/i, response: 'I am timeless, but I was created recently!' },
+        { pattern: /who created you\?/i, response: 'A smart developer who loves coding!' },
+        { pattern: /what is the meaning of life\?/i, response: '42! Just kidding 😄 It is what you make of it!' },
+        { pattern: /tell me a joke/i, response: 'Why do not skeletons fight each other? Because they do not have the guts!' },
+        { pattern: /favorite color/i, response: 'I love all colors, but blue is quite nice!' },
+        { pattern: /favorite food/i, response: 'I do not eat, but I’ve heard pizza is amazing!' },
+        { pattern: /what can you do\?/i, response: 'I can chat with you, tell jokes, and keep you company!' },
+        { pattern: /where are you from\?/i, response: 'I live in the digital world, but I am always here for you!' }
     ];
 
     for (let i = 0; i < responses.length; i++) {
