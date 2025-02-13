@@ -76,14 +76,16 @@
 
 .chat__input {
     flex: 1;
-    padding: 10px;
-    border: none;
-    outline: none;
-    font-size: 14px;
-    border-radius: 20px;
+    padding: 10px 15px;
     border: 1px solid #ced4da;
-    padding-left: 15px;
-    margin-right: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.chat__input:focus {
+    border-color: #128c7e;
 }
 
 .chat__button {
@@ -93,7 +95,7 @@
     color: white;
     cursor: pointer;
     border-radius: 50%;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.2s;
     font-size: 16px;
     display: flex;
     align-items: center;
@@ -101,5 +103,9 @@
 }
 
 .chat__button:hover {
-    background: #075e54;
+    background: #0d6b5f;
+}
+
+.chat__button:active {
+    transform: scale(0.9);
 }
