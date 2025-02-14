@@ -1,5 +1,8 @@
 # 💬 Simple Chat App
 
+## Demo 
+ https://vitalikxxx.github.io/chat-simulation/
+
 ## 🎯 About the Project
 This is a simple and minimalistic chat interface that simulates a conversation with a chatbot. The chat provides pre-defined responses based on user input, making it a fun and interactive experience.
 
