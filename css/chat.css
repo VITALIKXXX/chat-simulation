@@ -20,14 +20,13 @@
     position: relative;
 }
 
-
 .chat__box {
     flex: 1;
     padding: 15px;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    background: #efe7dd;
+    background: #e8efee;
     scroll-behavior: smooth;
     margin-top: 50px;
 }
@@ -128,25 +127,14 @@
     left: 0;
 }
 
-.chat__box {
-    flex: 1;
-    padding: 15px;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    background: #efe7dd;
-    scroll-behavior: smooth;
-    margin-top: 50px;
-}
-
 .chat__left {
     display: flex;
     align-items: center;
 }
 
 .chat__icon img {
-    width: 30px;
-    height: 30px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     margin-right: 10px;
 }
