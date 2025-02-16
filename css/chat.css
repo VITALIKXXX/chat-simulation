@@ -29,6 +29,7 @@
     background: #e8efee;
     scroll-behavior: smooth;
     margin-top: 50px;
+    margin-bottom: 60px;
 }
 
 .chat__message {
