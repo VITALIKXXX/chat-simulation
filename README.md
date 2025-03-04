@@ -1,7 +1,7 @@
 # 💬 Simple Chat App
 
 ## Demo 
- https://vitalikxxx.github.io/chat-simulation/
+ [Chat-App](https://vitalikxxx.github.io/chat-simulation/)
 
  ![Animation](https://github.com/VITALIKXXX/chat-simulation/blob/deeb1fa0d544a4e265fc79b255985ca6d7120491/Animation%20%20NEWwww1.gif)
 
